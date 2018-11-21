@@ -1,51 +1,46 @@
+//nitin
+//kumar
+//copy of strings
+
 #include<iostream>
 using namespace std;
-void mystrcopy(char string[],char stringcpy[])
-{
-    char *p=string;
-    char *s=stringcpy;
-    while(*p!='\0')
-    {
-        *s=*p;
-        p++;
-        s++;
-    }
-    *s='\0';
-}
 
 int main()
 {
-    char string[100];
-    char stringcpy[100];
-    cout<<"Enter a string: ";
-    cin>>string;
-//call
-    mystrcopy(string,stringcpy);
-    cout<<stringcpy<<endl;
-    return 0;
+    char a[5];
+    char b[5];
+	cout<<"Enter 1st string of 5 elements: ";
+    cin>>a;
+/*int size1st;
+size1st=sizeof(a)/sizeof(a[0]);
+cout<<size1st<<endl;*/
+
+
+cout<<"Enter 2nd string of similar size: ";
+    cin>>b;
+
+//two pointers
+char *p=a;
+char*q=b;
+
+	cout<<"   now your 1st string"<<endl;
+	for(int i=0;i<5;i++){
+	p=q;
+	cout<<*p;//a=p printing new a array
+	p++;
+	}
+
+
+
+cout<<endl;
+		cout<<"  now your 2nd string"<<endl;
+		for(int j=0;j<5;j++){
+		b[j]=a[j];
+		cout<<b[j];//printing new b array
+		
+		}
+
+
+
+
 }
-
-/*#include<iostream>
-using namespace std;
-void my_strcpy(char *s, char *t){
-    //t = s;
-    while (*s=0){
-        *t = *s;
-        s++; t++;
-    }
-    *t = '\0';
-}
-
-int main(){
-    char s[10] = "Hello";
-    char t[10];
-
-    cout << "Enter source : ";
-    cin >> s;
-
-    my_strcpy(s,t);
-
-    cout << t << endl;
-
-    return 0;
-}*/
