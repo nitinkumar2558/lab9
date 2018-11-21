@@ -5,12 +5,12 @@
 using namespace std;
 int myStrlen(char *p)
 {
-    int count;
-    count=0;
-    while(*p!='\0')
+    int count=0;
+
+    while(*p!='\0')//till array element is null it run
     {
         p++;
-        count++;
+        count++;//number of time it run equal number of element in array
     }
     return count;
 }
