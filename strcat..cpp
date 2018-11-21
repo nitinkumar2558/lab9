@@ -1,38 +1,20 @@
 
-//include libraries
+//nitin
+//kumar
 #include<iostream>
 #include<cstring>
 using namespace std;
+//strcat
+int main(){
+char a[5],b[5],c[10];
+cin>>a>>b;
+for(int i=0,i<10;i++){
+c[i]=a[i];
+c[i+5]=b[i];
+}
+for(int g;g>0;g++){
 
-void fstrcat(){
-    char a[20],b[20],*m,*p;
-    cout<<"Enter the string1 "<<endl;
-    cin>>a;
-    cout<<"Enter the string2 "<<endl;
-    cin>>b;
-    p=b;
-    m=a;
-        while(*m!='\0')
-        m++;
-        while(*p!='\0'){
-        *m=*p;
-        p++;
-        m++;
-           if (*p=='\0')
-           *m='\0';
-        }
-    m=a;
-    cout<<"Resulting string12 is "<<endl;
-    while(*m!='\0'){
-    cout<<*m;
-    m++;}
-    }
+cout<<c[i];
+}
 
-//main function
-int main(){ 
-   fstrcat();
-   cout<<endl;
-
-//terminating program
-return 0;
 }
