@@ -10,7 +10,7 @@ int main()
 {
 		char a[5],k;
 		int count;
-		cout<<"Enter number string  "<<endl;
+		cout<<"Enter string  "<<endl;
 		cin>>a;
 		cout<<"Enter the character you want  "<<endl;
 		cin>>k;
